@@ -28,6 +28,11 @@ body {
 	overflow-x: hidden;
 	background-color: var(--VeryDarkBlue);
 	color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 main {
@@ -38,16 +43,15 @@ main {
 	overflow: hidden;
 }
 
-.layer {
-	height: 240px;
-	background-color: var(--SoftVioletLight);
-}
 .img-section {
 	height: 240px;
 	background-image: url(images/image-header-mobile.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-color: var(--SoftVioletLight);
+	background-blend-mode: multiply;
+	opacity: 0.8;
 }
 
 .section2 {
