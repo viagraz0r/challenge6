@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+	--VeryDarkBlue: hsl(233, 47%, 7%);
+	--DarkDesaturatedBlue: hsl(244, 38%, 16%);
+	--SoftViolet: hsl(277, 64%, 61%);
+	--SoftVioletLight: hsla(277, 100%, 37%, 0.5);
+
+	--White: hsl(0, 0%, 100%);
+	--SlightlyTransparentWhiteParagraph: hsla(0, 0%, 100%, 0.75);
+	--SlightlyTransparentWhiteHeadings: hsla(0, 0%, 100%, 0.6);
+
+	--FontHeading: 'Inter', sans-serif;
+	--FontParagraph: 'Lexend Deca', sans-serif;
+}
+html {
+	box-sizing: border-box;
+	font-size: 15px;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background-color: var(--VeryDarkBlue);
+	color: white;
+}
+
+main {
+	background-color: var(--DarkDesaturatedBlue);
+	max-width: 1200px;
+	margin: 85px 25px 40px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.layer {
+	height: 240px;
+	background-color: var(--SoftVioletLight);
+}
+.img-section {
+	height: 240px;
+	background-image: url(images/image-header-mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.section2 {
+	text-align: center;
+	margin: 45px 30px 40px;
+}
+
+.section2 h1 {
+	font-family: var(--FontHeading);
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.section2 h1 span {
+	color: var(--SoftViolet);
+}
+
+.section2 p {
+	font-family: var(--FontParagraph);
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--SlightlyTransparentWhiteHeadings);
+	line-height: 1.8;
+}
+
+.stats {
+	margin-top: 45px;
+	height: 206px;
+}
+
+.stats .companies {
+	margin-bottom: 24px;
+}
+
+.stats .companies h2 {
+	font-family: var(--FontHeading);
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.stats .companies p {
+	font-family: var(--FontParagraph);
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--SlightlyTransparentWhiteHeadings);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.stats .templates {
+	margin-bottom: 24px;
+}
+.stats .templates h2 {
+	font-family: var(--FontHeading);
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.stats .templates p {
+	font-family: var(--FontParagraph);
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--SlightlyTransparentWhiteHeadings);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.stats .queries h2 {
+	font-family: var(--FontHeading);
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.stats .queries h2 span {
+	text-transform: uppercase;
+}
+
+.stats .queries p {
+	font-family: var(--FontParagraph);
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--SlightlyTransparentWhiteHeadings);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0;
+}
+footer {
+	text-align: center;
+	margin: 30px;
+}
+
+.attribution {
+	font-family: var(--FontParagraph);
+	font-size: 12px;
+	text-align: center;
+}
+.attribution a {
+	color: var(--SlightlyTransparentWhiteHeadings);
+}
+
+@media screen and (min-width: 992px) {
+	main {
+		height: 445px;
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 85px auto;
+	}
+	.img-section {
+		width: 561px;
+		height: 445px;
+		background-image: url(images/image-header-desktop.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.layer {
+		height: 445px;
+	}
+	.section2 {
+		text-align: left;
+		margin: 80px 65px 70px;
+	}
+
+	.section2 h1 {
+		font-size: 30px;
+	}
+
+	.section2 p {
+		margin-bottom: 40px;
+	}
+
+	.stats {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 0px;
+		height: auto;
+	}
+	.stats .companies {
+		margin-bottom: 0;
+	}
+	.stats .templates {
+		margin-bottom: 0;
+	}
+}
